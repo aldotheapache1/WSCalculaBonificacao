@@ -1,0 +1,27 @@
+﻿
+
+<div class="card-body">
+    <form class="form" method="post" style="margin: 20px 0">
+
+        <div class="form-group">
+         
+            Salario: <input type="text" class="form-control" name="salario" />
+            Quantidade de Faltas: <input type="text" class="form-control" name="qtdFaltas" />
+            Quantidade de Advertencias: <input type="text" class="form-control" name="qtdAdvertencias" />
+            Produtividade: <input type="text" class="form-control" name="produtividade" />
+            Quantidade de Horas de Cursos: <input type="text" class="form-control" name="qtdHorasCursos" />
+            <input type="submit" class="btn btn-success" value="Executar operação" />
+        </div>
+    </form>
+</div>
+
+<div class="alert alert-warning">
+
+    @{
+        if (ViewBag.Resultado != null)
+        {
+            @ViewBag.Resultado;
+        }
+    }
+
+</div>

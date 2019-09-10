@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws/" targetNamespace="http://ws/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="salario" type="tns:salario" />
+  <xs:element name="salarioResponse" type="tns:salarioResponse" />
+  <xs:complexType name="salario">
+    <xs:sequence>
+      <xs:element name="salario" type="xs:double" />
+      <xs:element name="qtdFaltas" type="xs:int" />
+      <xs:element name="qtdAdvertencias" type="xs:int" />
+      <xs:element name="produtividade" type="xs:int" />
+      <xs:element name="qtdHorasCursos" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="salarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
